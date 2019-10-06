@@ -1,6 +1,7 @@
 package ru.itis.logicmodule.mapper;
 
 
+import org.mapstruct.InheritInverseConfiguration;
 import org.mapstruct.Mapper;
 import org.mapstruct.Mapping;
 import org.mapstruct.Mappings;
@@ -20,6 +21,7 @@ public interface BookMapper {
             @Mapping(target = "authorName",source = "book.author.name"),
             @Mapping(target = "authorId", source = "book.author.id")
     })
+    @InheritInverseConfiguration
     BookDto bookToBookDto(Book book);
 
     List<Book> bookDtosToBooks(List<BookDto> bookDtos);

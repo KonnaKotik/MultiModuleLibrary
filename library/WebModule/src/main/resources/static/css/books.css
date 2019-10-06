@@ -1,0 +1,24 @@
+ 
+.navbar {
+    box-shadow: 5px 10px 20px 5px rgba(102, 65, 55, 10);
+   /* background-image: url("https://wallup.net/wp-content/uploads/2017/11/22/327871-books-library-bokeh-depth_of_field.jpg");
+*/}
+
+.brand a[type = "brand"] {
+  color: #52230a
+}
+
+.btn-home a[type = "back"]{
+   background-color: rgba(102, 67, 55, .50);
+   color: #ffffff;
+   font-size: 18px;
+   width: 100px;
+   height: 40px;
+}
+
+.btn-home a[type = "back"]:hover{
+    cursor: pointer;
+    background: #52230a;
+    color: #ffffff;
+
+}

@@ -1,0 +1,58 @@
+.themed-grid-col {
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #ffffff;
+  border: 2px solid #adb1ed;
+}
+ a[type = "text"] {
+  color: #000000; 
+  font-size: 20px;
+}
+
+a[type = "text"]:hover {
+  cursor: pointer;
+  color: #adb1ed;
+}
+a[type = "delete"] {
+  color: #dc0000; 
+  font-size: 20px;
+}
+
+a[type = "delete"]:hover {
+  cursor: pointer;
+  color: #ff0000;
+}
+
+a[type = "typeData"] {
+  color: #95cdf0; 
+  font-size: 20px;
+}
+
+a[type = "typeData"]:hover {
+  cursor: pointer;
+  color: #1d8acf;
+}
+
+input[type = "submit"] {
+  border: none;
+  outline: none;
+  height: 40px;
+  background: #95cdf0;
+  color: #ffffff;
+  font-size: 18px;
+  border-radius: 20px;
+ }
+input[type = "submit"]:hover {
+  cursor: pointer;
+  background: #adb1ed;
+  color: #ffffff;
+}
+
+input[type = "date"] {
+  border: 1px solid #95cdf0;
+  background: transparent;
+  outline: none;
+  height: 40px;
+  color: #000000;
+  font-size: 16px;
+}

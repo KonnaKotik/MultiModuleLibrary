@@ -9,6 +9,7 @@ import java.util.Optional;
 public interface BooksRepository extends JpaRepository<Book, Long> {
     List<Book> findAll();
     Optional<Book> findById(Long id);
-    boolean existsByTitleAndAuthor_Name(String title, String authorName);
     List<Book> findAllByAuthor_Id(Long authorId);
+    void deleteBookById(Long id);
+    Optional<Book> findByTitle(String title);
 }

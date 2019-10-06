@@ -12,5 +12,6 @@ public interface AuthorRepository extends JpaRepository<Author, Long> {
     List<Author> findAll();
     Optional<Author> findById(Long id);
     boolean existsByName(String name);
-    void deleteById(Long id);
+    void deleteAuthorById(Long id);
+
 }

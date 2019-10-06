@@ -1,0 +1,64 @@
+.intro-2 {
+    background: url("https://wallup.net/wp-content/uploads/2017/11/22/327871-books-library-bokeh-depth_of_field.jpg")no-repeat center center;
+    background-size: cover;
+}
+    
+
+.navbar {
+    background-color: transparent;
+    box-shadow: 5px 10px 20px 5px rgba(0, 0, 0, 10);
+}
+
+.top-nav-collapse {
+    background-color: #4285F4;
+}
+h1 {
+  font-size: 80px;
+  margin: 10px;
+  color: #52230a;
+  font-family: 'Playfair Display', serif;
+  font-style: italic;
+  font-weight: bolder;
+  letter-spacing: 7px;
+  text-align: center;
+}
+
+.center-home {
+  top: 50%; /* Отступ в процентах от верхнего края окна */
+  left: 50%; /* Отступ в процентах от левого края окна */
+  width: 500px; /* Ширина блока */
+  height: 170px; /* Высота блока */
+  position: absolute; /* Абсолютное позиционирование блока */
+  margin-top: -225px; /* Отрицательный отступ от верхнего края страницы, должен равняться половине высоты блока со знаком минус */
+  margin-left: -225px; /* Отрицательный отступ от левого края страницы, должен равняться половине высоты блока со знаком минус */
+  /*box-shadow: 5px 10px 20px 5px rgba(102, 62, 55, .100);
+  background-color: rgba(102, 67, 55, .50);*/	
+
+}
+
+.btn-home a[type = "book"]{
+   background-color: rgba(102, 67, 55, .50);
+   color: #ffffff;
+   font-size: 18px;
+   width: 100px;
+   height: 40px;
+}
+
+.btn-home a[type = "book"]:hover{
+    cursor: pointer;
+    background: #52230a;
+    color: #ffffff;
+
+}
+
+@media only screen and (max-width: 768px) {
+    .navbar {
+        background-color: #4285F4;
+    }
+}
+html,
+body,
+header,
+.view {
+    height: 100%;
+}

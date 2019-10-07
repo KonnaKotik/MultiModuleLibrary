@@ -29,6 +29,6 @@ public class Author implements Serializable {
 
     private String urlImg;
 
-    @OneToMany(mappedBy = "author",cascade = CascadeType.ALL, fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "author", cascade = CascadeType.ALL, fetch = FetchType.LAZY)
     private List<Book> books;
 }

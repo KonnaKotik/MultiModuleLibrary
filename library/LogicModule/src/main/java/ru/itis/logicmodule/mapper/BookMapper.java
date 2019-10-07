@@ -18,7 +18,7 @@ public interface BookMapper {
     Book bookDtoToBook(BookDto bookDto);
 
     @Mappings({
-            @Mapping(target = "authorName",source = "book.author.name"),
+            @Mapping(target = "authorName", source = "book.author.name"),
             @Mapping(target = "authorId", source = "book.author.id")
     })
     @InheritInverseConfiguration

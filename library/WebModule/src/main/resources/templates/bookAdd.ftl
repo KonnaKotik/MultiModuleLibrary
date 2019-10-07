@@ -7,7 +7,8 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/edit.css">
 
     <title>Library</title>
@@ -16,7 +17,7 @@
 <div>
     <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="brand">
-            <a class="navbar-brand" type = "brand" href="/"><strong>Your Library</strong></a>
+            <a class="navbar-brand" type="brand" href="/"><strong>Your Library</strong></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,42 +45,42 @@
 </div>
 
 <div class="container">
-        <br><br>
+    <br><br>
     <form method="post" action="/books/add">
         <div class="row" style="margin-bottom: 15px ">
-        <div class="col-2 text-left" style="
+            <div class="col-2 text-left" style="
   padding: 15px;">
                 <h4>Title</h4>
             </div>
-            <input class="col-10 themed-grid-col" name="title" id="title"  placeholder="title" >
+            <input class="col-10 themed-grid-col" name="title" id="title" placeholder="title">
         </div>
         <div class="row" style="margin-bottom: 30px ">
-        <div class="col-2 text-left" style="
+            <div class="col-2 text-left" style="
   padding: 15px;">
                 <h4>Description</h4>
             </div>
-            <input class="col-10 themed-grid-col" name="description" id="description"  placeholder="description">
+            <input class="col-10 themed-grid-col" name="description" id="description" placeholder="description">
         </div>
-          <div class="row" style="margin-bottom: 15px ">
-        <div class="col-2 text-left" style="
+        <div class="row" style="margin-bottom: 15px ">
+            <div class="col-2 text-left" style="
   padding: 15px;">
                 <h4>Author's name</h4>
             </div>
-            <input class="col-10 themed-grid-col" name="authorName" id="authorName"  placeholder="Author's name" >
+            <input class="col-10 themed-grid-col" name="authorName" id="authorName" placeholder="Author's name">
         </div>
         <div class="row" style="margin-bottom: 30px ">
             <div class="col-2 text-left" style="
   padding: 15px;">
                 <h4>Url Image</h4>
             </div>
-            <input type="text" class="col-10 themed-grid-col" name="urlImg" id="urlImg"  placeholder="UrlImg" >
+            <input type="text" class="col-10 themed-grid-col" name="urlImg" id="urlImg" placeholder="UrlImg">
         </div>
         <div class="text-center">
-            <input type="submit" class="btn btn-outline-success" style="color: #000000;width: 200px; border-radius: 20px " value="Add book"/>
+            <input type="submit" class="btn btn-outline-success"
+                   style="color: #000000;width: 200px; border-radius: 20px " value="Add book"/>
         </div>
     </form>
-    </div>
-
+</div>
 
 
 </body>

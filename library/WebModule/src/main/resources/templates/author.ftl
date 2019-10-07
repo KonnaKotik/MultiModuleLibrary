@@ -52,7 +52,7 @@
         <div class="col-4"></div>
         <div class="col-4 text-right">
             <input href="/authors/add" class="btn btn-outline-success"
-                    style="color: #000000;width: 150px " value="Add Author"/>
+                   style="color: #000000;width: 150px " value="Add Author"/>
 
         </div>
     </div>
@@ -81,7 +81,7 @@
                 </div>
                 <div class="col-4 text-right">
                     <a href="/authors/edit/${author.id}" class="btn btn-outline-success"
-                       style="color: #000000;width: 100px; border-radius: 20px " >Edit</a>
+                       style="color: #000000;width: 100px; border-radius: 20px ">Edit</a>
 
                 </div>
             </div>

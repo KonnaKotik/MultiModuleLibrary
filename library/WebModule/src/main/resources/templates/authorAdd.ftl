@@ -65,7 +65,7 @@
   padding: 15px;">
                  <h4>Url Image</h4>
              </div>
-             <input type="text" class="col-10 themed-grid-col" name="urlImg" id="urlImg"  placeholder="UrlImg" >
+             <input type="text" class="col-10 themed-grid-col" name="urlImg" id="urlImg" placeholder="UrlImg">
          </div>
 
         <div class="text-center">

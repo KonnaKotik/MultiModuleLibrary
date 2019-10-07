@@ -7,16 +7,17 @@
 
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+          integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <link rel="stylesheet" type="text/css" href="/css/edit.css">
 
     <title>Library</title>
 </head>
 <body style="background-color: #f2ddc6">
 <div>
-	<nav class="navbar navbar-expand-md navbar-light sticky-top">
+    <nav class="navbar navbar-expand-md navbar-light sticky-top">
         <div class="brand">
-            <a class="navbar-brand" type = "brand" href="/"><strong>Your Library</strong></a>
+            <a class="navbar-brand" type="brand" href="/"><strong>Your Library</strong></a>
         </div>
 
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -44,37 +45,38 @@
 </div>
 
 <div class="container">
-        <br><br>
-        <div class="row" style="margin-bottom: 50px ">
-            <div class="col-4"></div>
-            <div class="col-4"></div>
-             <div class="col-4 text-right">
-                 <form  method="post" action="/books/delete/${book.id}">
-                     <input  class="btn btn-outline-danger" type="submit" data-toggle="modal" data-target="#deleteModal"  style="color: #000000; width: 150px; border-radius: 20px " value="Delete"/>
-                 </form>
-             </div>
+    <br><br>
+    <div class="row" style="margin-bottom: 50px ">
+        <div class="col-4"></div>
+        <div class="col-4"></div>
+        <div class="col-4 text-right">
+            <form method="post" action="/books/delete/${book.id}">
+                <input class="btn btn-outline-danger" type="submit" data-toggle="modal" data-target="#deleteModal"
+                       style="color: #000000; width: 150px; border-radius: 20px " value="Delete"/>
+            </form>
         </div>
+    </div>
     <form method="post">
         <div class="row" style="margin-bottom: 15px ">
-        <div class="col-2 text-left" style="
+            <div class="col-2 text-left" style="
   padding: 15px;">
                 <h4>Title</h4>
             </div>
-            <input class="col-10 themed-grid-col" name="title" id="title"  placeholder="${book.title}" >
+            <input class="col-10 themed-grid-col" name="title" id="title" placeholder="${book.title}">
         </div>
         <div class="row" style="margin-bottom: 30px ">
-        <div class="col-2 text-left" style="
+            <div class="col-2 text-left" style="
   padding: 15px;">
                 <h4>Description</h4>
             </div>
-            <input class="col-10 themed-grid-col" name="description" id="description"  placeholder="${book.description}">
+            <input class="col-10 themed-grid-col" name="description" id="description" placeholder="${book.description}">
         </div>
         <div class="text-center">
-            <input type="submit" class="btn btn-outline-success" style="color: #000000;width: 200px; border-radius: 20px " value="Edit"/>
+            <input type="submit" class="btn btn-outline-success"
+                   style="color: #000000;width: 200px; border-radius: 20px " value="Edit"/>
         </div>
     </form>
-    </div>
-
+</div>
 
 
 </body>

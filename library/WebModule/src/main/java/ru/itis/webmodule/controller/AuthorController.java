@@ -18,7 +18,6 @@ import ru.itis.logicmodule.service.AuthorsService;
 public class AuthorController {
 
 
-
     private final AuthorsService authorsService;
 
     @Autowired

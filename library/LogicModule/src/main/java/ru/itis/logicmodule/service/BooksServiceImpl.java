@@ -10,7 +10,6 @@ import ru.itis.logicmodule.model.Book;
 import ru.itis.logicmodule.repository.AuthorRepository;
 import ru.itis.logicmodule.repository.BooksRepository;
 
-import javax.persistence.EntityExistsException;
 import javax.persistence.EntityNotFoundException;
 import java.util.List;
 
@@ -39,10 +38,10 @@ public class BooksServiceImpl implements BooksService {
 
     @Override
     public void save(BookDto bookDto) {
-            Author author = authorRepository.findByName(bookDto.getAuthorName()).orElseThrow(EntityNotFoundException::new);
-            Book book = bookMapper.bookDtoToBook(bookDto);
-            book.setAuthor(author);
-            booksRepository.save(book);
+        Author author = authorRepository.findByName(bookDto.getAuthorName()).orElseThrow(EntityNotFoundException::new);
+        Book book = bookMapper.bookDtoToBook(bookDto);
+        book.setAuthor(author);
+        booksRepository.save(book);
     }
 
 
@@ -61,7 +60,7 @@ public class BooksServiceImpl implements BooksService {
         return bookMapper.booksToBookDtos(booksRepository.findAllByAuthor_Id(authorId));
     }
 
-   // @Transactional
+    // @Transactional
     @Override
     public void deleteById(Long id) {
         Book book = booksRepository.findById(id).orElseThrow(EntityNotFoundException::new);
